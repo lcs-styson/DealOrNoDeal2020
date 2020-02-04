@@ -76,7 +76,7 @@ func getBriefcaseOpened(onTurn turn: Int) -> Int {
     
     
     // The statement below can be modified
-    return 0
+    return 1
     
 }
 
