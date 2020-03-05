@@ -23,10 +23,14 @@ for _ in 1...10 {
 }
 // Iterate over all the values
 // Find the highest number in a random array
+// Set maximum to lowest so it can be easily changed.
 var maxSoFar = 0
+
+// display the numbers
 for number in randomNumbers {
     print("number: \(number)")
    
+    // If a number is bigger than 0 it will be replaced if a number is bigger it will replace the one before etc
     if maxSoFar < number {
         maxSoFar = number
         print("maxSoFar: \(maxSoFar)")
@@ -34,13 +38,19 @@ for number in randomNumbers {
 
 }
 
+// Find the lowest number in a random array.
+// Set min as highest number so it can be easily changed
 var minSoFar = 100
+
+// Display numbers
 for number in randomNumbers {
     print("number: \(number)")
     
+    // Each Number that is lower will replace the one before it
     if minSoFar > number {
         minSoFar = number
         print("minSoFar: \(minSoFar)")
     }
     
 }
+print(":)")
