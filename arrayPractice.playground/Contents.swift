@@ -33,3 +33,14 @@ for number in randomNumbers {
     }
 
 }
+
+var minSoFar = 100
+for number in randomNumbers {
+    print("number: \(number)")
+    
+    if minSoFar > number {
+        minSoFar = number
+        print("minSoFar: \(minSoFar)")
+    }
+    
+}
